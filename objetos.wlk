@@ -1,3 +1,4 @@
+import personas.*
 //Como **colores** tenemos: el rojo y el verde que son fuertes; el celeste y el pardo que no.
 object rojo {
   method esFuerte() = true

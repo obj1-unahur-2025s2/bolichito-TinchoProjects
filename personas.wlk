@@ -8,25 +8,17 @@ Tener en cuenta a estas personas:
 - _Juan_: le gustan las cosas que, o bien son de un color que no es fuerte, o bien pesan entre 1200 y 1800 gramos.
 */
 object rosa {
-    method leGusta(cosa){
-        cosa.peso() <= 2000
-    }
+    method leGusta(cosa) = cosa.peso() <= 2000
 }
 
 object estefania {
-    method leGusta(cosa){
-        cosa.color().esFuerte()
-    }
+    method leGusta(cosa) = cosa.color().esFuerte()
 }
 
 object luisa {
-    method leGusta(cosa){
-        cosa.material().brilla()
+    method leGusta(cosa) = cosa.material().esBrillante()
     }
-}
 
 object juan {
-    method leGusta(cosa){
-        !cosa.color().esFuerte() || (cosa.peso() >= 1200 && cosa.peso() <= 1800)
-    }
+    method leGusta(cosa) = not cosa.color().esFuerte() || (cosa.peso() between(1200, 1800))
 }
