@@ -40,10 +40,8 @@ object bolichito {
             }
         }
     }
-
-    method ofrecer
-
-    method ofrecer(lugar){
+    
+        method ofrecer(lugar){
         if (lugar == "mostrador"){
             mostrador = null
         } else {

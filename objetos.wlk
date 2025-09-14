@@ -3,6 +3,10 @@ object rojo {
   method esFuerte() = true
 }
 
+object naranja {
+  method esFuerte() = true
+}
+
 object verde {
   method esFuerte() = true
 }
@@ -82,4 +86,31 @@ object placa {
     peso = nuevoPeso
   }
   method peso() = peso
+}
+
+object arito {
+  method color() = celeste
+  method material() = cobre
+  method peso() = 180
+}
+
+object banquito {
+  var color = naranja
+  method color() = color
+  method color(nuevoColor){
+    color = nuevoColor
+  }
+  method material() = madera
+  method peso() = 1700
+}
+
+object cajita {
+  var contenido = "arito"
+  method contenido() = contenido
+  method contenido(nuevoContenido){
+    contenido = nuevoContenido
+  }
+  method color() = rojo
+  method material() = cobre
+  method peso() = 400 + contenido.peso()
 }
