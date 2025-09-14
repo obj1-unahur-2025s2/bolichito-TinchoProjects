@@ -1,5 +1,3 @@
-import objetos.*
-
 /*
 Tener en cuenta a estas personas:
 - _Rosa_: le gustan las cosas que pesan 2 kilos (o sea 2000 gramos) o menos.
@@ -9,6 +7,7 @@ Tener en cuenta a estas personas:
 */
 object rosa {
     method leGusta(cosa) = cosa.peso() <= 2000
+
 }
 
 object estefania {
@@ -20,5 +19,5 @@ object luisa {
     }
 
 object juan {
-    method leGusta(cosa) = not cosa.color().esFuerte() || (cosa.peso() between(1200, 1800))
+    method leGusta(cosa) = not cosa.color().esFuerte() || cosa.peso().between(1200, 1800)
 }

@@ -1,4 +1,3 @@
-import personas.*
 //Como **colores** tenemos: el rojo y el verde que son fuertes; el celeste y el pardo que no.
 object rojo {
   method esFuerte() = true
@@ -59,31 +58,28 @@ object biblioteca {
 
 object muñeco {
   var peso = 1000
-  method Peso(nuevoPeso){
+  var color = celeste
+  method peso(nuevoPeso){
     peso = nuevoPeso
   }
-  method color() = celeste
-  method material() = vidrio
-  method peso(){
-    return peso
+  method color(nuevoColor){
+    color = nuevoColor
   }
+  method material() = vidrio
+  method peso() = peso
+  method color() = color
 }
 
 object placa {
   var peso = 1000
   var color = rojo
-  method color
+  method color() = color
   method Color(nuevoColor){
     color = nuevoColor
   }
-  method color(){
-    return color
-  }
   method material() = cobre
-  method Peso(nuevoPeso){
+  method peso(nuevoPeso){
     peso = nuevoPeso
   }
-  method peso(){
-    return peso
-  }
+  method peso() = peso
 }
